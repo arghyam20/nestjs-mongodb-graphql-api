@@ -1,7 +1,7 @@
 <div align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-  <h1>NestJS MongoDB Swagger API Boilerplate</h1>
-  <p>A progressive Node.js backend boilerplate built with NestJS, designed for scalability, performance, and rapid development.</p>
+  <h1>NestJS MongoDB GraphQL API Boilerplate</h1>
+  <p>A progressive Node.js backend boilerplate built with NestJS, designed for scalability, performance, and rapid development, featuring both REST (Swagger) and GraphQL endpoints.</p>
 
   [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com/)
   [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
@@ -10,13 +10,15 @@
 
 ---
 
-This starter kit comes pre-configured with MongoDB, JWT Authentication, Swagger for API documentation, and a plethora of ready-to-use modules, giving you a solid foundation for your next great backend project.
+This starter kit comes pre-configured with MongoDB, JWT Authentication, GraphQL (Apollo Server), Swagger for REST API documentation, and a plethora of ready-to-use modules, giving you a solid foundation for your next great backend project.
 
 ## 🚀 Features
 
 - **Framework**: Built on top of [NestJS](https://nestjs.com/) and Express.
 - **Database**: [MongoDB](https://www.mongodb.com/) integration using [Mongoose](https://mongoosejs.com/).
-- **API Documentation**: Auto-generated OpenAPI (Swagger) documentation available at `/apidoc`.
+- **API Documentation & Endpoints**: 
+  - GraphQL API with Apollo Server integration (Playground enabled at `/graphql`).
+  - Auto-generated REST OpenAPI (Swagger) documentation available at `/apidoc`.
 - **Authentication & Authorization**:
   - JWT (JSON Web Token) based authentication.
   - Access Tokens & Refresh Tokens.
@@ -94,7 +96,8 @@ The `.env` file contains several configuration options. Here's a breakdown of th
 
 Once the application is running, you can access the Swagger UI to view and interact with the API endpoints.
 
-- **URL:** `http://localhost:<PORT>/apidoc` (e.g., [http://localhost:3000/apidoc](http://localhost:3000/apidoc))
+- **REST (Swagger):** `http://localhost:<PORT>/apidoc` (e.g., [http://localhost:3000/apidoc](http://localhost:3000/apidoc))
+- **GraphQL Playground:** `http://localhost:<PORT>/graphql` (e.g., [http://localhost:3000/graphql](http://localhost:3000/graphql))
 
 ## 📂 Project Structure
 
